@@ -1,5 +1,7 @@
 # YouTube Embed
 
-Embed YouTube Videos from the `source=` query string.
+Embed a YouTube Video parsed from the `source` query string.
 
-User Script: [youtube-redirect.user.js](youtube-redirect.user.js)
+User Script to Redirect: [youtube-redirect.user.js](https://github.com/smashedr/youtube-embed/raw/master/youtube-redirect.user.js)
+
+To Install User Scripts use Violent Monkey: https://violentmonkey.github.io/
