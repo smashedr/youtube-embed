@@ -17,13 +17,14 @@ const iframe = document.querySelector('iframe')
     const id = url.searchParams.get('v')
     console.debug('id:', id)
     if (!id) {
-        displayError('No id in source query string.')
-        return console.warn('No id in source query string:', url)
+        displayError('No v in source query string.')
+        return console.warn('No v in source query string:', url)
     }
 
     const src = `https://www.youtube.com/embed/${id}`
     iframe.src = src
     console.log(`Embed URL: ${src}`)
+    document.title = `${document.title}: ${id}`
 })()
 
 function displayError(text) {
