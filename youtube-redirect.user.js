@@ -6,7 +6,6 @@
 // @namespace   https://github.com/smashedr
 // @updateURL   https://github.com/smashedr/youtube-embed/raw/master/youtube-redirect.user.js
 // @icon        https://github.com/smashedr/youtube-embed/raw/master/favicon.ico
-// @grant       none
 // @run-at      document-start
 // @match       https://www.youtube.com/watch?v=*
 // ==/UserScript==

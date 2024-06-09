@@ -1,3 +1,7 @@
+const error = document.getElementById('error')
+const message = document.getElementById('message')
+const iframe = document.querySelector('iframe')
+
 ;(function () {
     console.debug('index.js')
 
@@ -5,6 +9,7 @@
     const source = searchParams.get('source')
     console.debug('source:', source)
     if (!source) {
+        displayError('No source in the query string.')
         return console.warn('No source in query string:', searchParams)
     }
 
@@ -12,9 +17,17 @@
     const id = url.searchParams.get('v')
     console.debug('id:', id)
     if (!id) {
+        displayError('No id in source query string.')
         return console.warn('No id in source query string:', url)
     }
 
-    const iframe = document.querySelector('iframe')
-    iframe.src = `https://www.youtube.com/embed/${id}`
+    const src = `https://www.youtube.com/embed/${id}`
+    iframe.src = src
+    console.log(`Embed URL: ${src}`)
 })()
+
+function displayError(text) {
+    iframe.style.display = 'none'
+    error.style.display = 'block'
+    message.textContent = text
+}

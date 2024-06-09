@@ -1,4 +1,10 @@
-body{
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
 }
 
@@ -10,4 +16,14 @@ iframe {
     min-height: 100%;
     width: auto;
     height: auto;
+}
+
+#error {
+    display: none;
+    text-align: center;
+    color: navajowhite;
+}
+
+#message {
+    color: orangered;
 }
