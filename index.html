@@ -1,0 +1,41 @@
+---
+permalink: /
+title: YouTube Embed
+description: Feedback
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }}</title>
+
+    <meta name="author" content="{{ site.author }}"/>
+    <meta name="title" content="{{ page.title }}"/>
+    <meta name="description" content="{{ page.description }}"/>
+
+    <meta property="og:author" content="{{ site.author }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.site_url }}">
+    <meta property="og:image" content="{{ site.site_url }}/apple-touch-icon.png">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<iframe title="YouTube Embed"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        frameborder="0" allowfullscreen></iframe>
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
