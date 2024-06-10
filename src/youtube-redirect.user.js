@@ -4,8 +4,9 @@
 // @author      Shane
 // @version     1.1
 // @namespace   https://github.com/smashedr/youtube-embed
-// @updateURL   https://github.com/smashedr/youtube-embed/raw/master/src/youtube-redirect.user.js
 // @icon        https://github.com/smashedr/youtube-embed/raw/master/src/favicon.ico
+// @updateURL   https://github.com/smashedr/youtube-embed/raw/master/src/youtube-redirect.user.js
+// @downloadURL https://github.com/smashedr/youtube-embed/raw/master/src/youtube-redirect.user.js
 // @run-at      document-start
 // @match       https://www.youtube.com/watch?v=*
 // ==/UserScript==
