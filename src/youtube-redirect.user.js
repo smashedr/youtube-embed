@@ -2,13 +2,16 @@
 // @name        YouTube Embed Redirector
 // @description Redirects YouTube Videos to an Embed
 // @author      Shane
-// @version     1.1
+// @version     1.2
 // @namespace   https://github.com/smashedr/youtube-embed
-// @icon        https://github.com/smashedr/youtube-embed/raw/master/src/favicon.ico
-// @updateURL   https://github.com/smashedr/youtube-embed/raw/master/src/youtube-redirect.user.js
-// @downloadURL https://github.com/smashedr/youtube-embed/raw/master/src/youtube-redirect.user.js
+// @icon        https://smashedr.github.io/youtube-embed/favicon.ico
+// @updateURL   https://smashedr.github.io/youtube-embed/youtube-redirect.user.js
+// @downloadURL https://smashedr.github.io/youtube-embed/youtube-redirect.user.js
 // @run-at      document-start
 // @match       https://www.youtube.com/watch?v=*
+// @match       https://www.youtube.com/v/*
+// @match       https://www.youtube.com/watch/*
+// @match       https://www.youtube.com/live/*
 // ==/UserScript==
 
 ;(function () {
