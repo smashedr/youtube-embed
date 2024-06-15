@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: YT Embed
-description: Feedback
+description: Watch YouTube Videos in an Embed because Google is Google.
 ---
 
 <!doctype html>
@@ -22,12 +22,13 @@ description: Feedback
     <meta property="og:description" content="{{ page.description }}">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.site_url }}">
-    <meta property="og:image" content="{{ site.site_url }}/apple-touch-icon.png">
+    <meta property="og:url" content="{{ "/" | absolute_url }}">
+    <meta property="og:image" content="{{ "/apple-touch-icon.png" | absolute_url }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" href="./favicon.ico" sizes="any">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relative_url }}">
+
+    <link rel="stylesheet" href="{{ "/index.css" | relative_url }}">
 </head>
 <body>
 
@@ -36,7 +37,7 @@ description: Feedback
     <h2 id="message"></h2>
     <p>
         Redirect User Script:
-        <a href="{{ site.site_url }}/youtube-redirect.user.js">
+        <a href="./youtube-redirect.user.js">
             youtube-redirect.user.js</a>
     </p>
     <p>
@@ -56,7 +57,7 @@ description: Feedback
         referrerpolicy="strict-origin-when-cross-origin"
         frameborder="0" allowfullscreen></iframe>
 
-<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="{{ "/index.js" | relative_url }}"></script>
 
 </body>
 </html>

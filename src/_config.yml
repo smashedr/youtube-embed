@@ -1,6 +1,8 @@
 timezone: America/Los_Angeles
 encoding: utf-8
 
+url: https://smashedr.github.io
+baseurl: /youtube-embed
+
 author: Shane
-site_url: https://smashedr.github.io/youtube-embed
 github_url: https://github.com/smashedr/youtube-embed
